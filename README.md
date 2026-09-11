@@ -36,7 +36,7 @@ No momento, os dados são armazenados **em memória** durante a execução da ap
   "id": 1,
   "title": "Estudar Flask",
   "description": "Revisar rotas e métodos HTTP",
-  "done": false
+  "completed": false
 }
 ```
 
