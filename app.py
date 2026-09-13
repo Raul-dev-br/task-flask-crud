@@ -49,5 +49,13 @@ def put_task(id):
       return jsonify({ "message": f"Deu Update!" })
   return jsonify({ "message": f"Task não encontrada! O id {id} não existe!" })
 
+@app.route("/tasks/<int:id>", methods=['DELETE'])
+def delete_task(id):
+  for t in tasks:
+    if t.get_id() == id:
+      tasks.remove(t)
+      return jsonify({ "message": "Task deletada com sucesso!" })
+  return jsonify({ "message": "Task não encontrada para deletar!" })
+
 if __name__ == "__main__":
   app.run(debug=True)
