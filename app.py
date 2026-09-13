@@ -39,5 +39,15 @@ def get_task(id: int):
       return jsonify(t.to_dict())
   return jsonify({"message": "Task não encontrada pelo ID"}), 404
 
+@app.route("/tasks/<int:id>", methods=['PUT'])
+def put_task(id):
+  data = request.get_json()
+  for i ,task in enumerate(tasks):
+    if task.get_id() == id:
+      updated_task = Task(id=id, title=data['title'], description=data.get('description', ''), completed=data.get('completed', False))
+      tasks[i] = updated_task
+      return jsonify({ "message": f"Deu Update!" })
+  return jsonify({ "message": f"Task não encontrada! O id {id} não existe!" })
+
 if __name__ == "__main__":
   app.run(debug=True)
