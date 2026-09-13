@@ -56,17 +56,3 @@ No momento, os dados são armazenados **em memória** durante a execução da ap
 - [ ] Tratamento de erros e status codes mais detalhados
 - [ ] Documentação dos endpoints (ex.: Swagger/OpenAPI)
 
----
-
-## 👤 Autor
-
-Desenvolvido por **Raul Ferreira**
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/raul-dev-br07/">
-    <img src="https://img.shields.io/badge/LinkedIn-0082FA?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:raulferreirapinto41@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
