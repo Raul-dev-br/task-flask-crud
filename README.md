@@ -47,12 +47,4 @@ No momento, os dados são armazenados **em memória** durante a execução da ap
 - **Python**
 - **Flask**
 
----
-
-## 🗺️ Próximos passos
-
-- [ ] Persistência de dados com banco de dados (PostgreSQL)
-- [ ] Validação de dados de entrada
-- [ ] Tratamento de erros e status codes mais detalhados
-- [ ] Documentação dos endpoints (ex.: Swagger/OpenAPI)
 
